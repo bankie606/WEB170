@@ -21,7 +21,9 @@
 
  
             <!--begin navigation -->
-<?php function wp_list_pages( array('main_menu' =>  __('Main Menu' )) ); ?>
+//begin wordpress Menu
+<?php wp_nav_menu(array('theme_location' => 'main_menu', 'container' => 'div', 'container_id' => 'navigation' ));
+?>    
             
             <!--end navigation -->
             <!--beging content -->

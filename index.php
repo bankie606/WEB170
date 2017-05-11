@@ -1,29 +1,6 @@
-
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Fred Wildlife Refuge</title>
-        <link rel=stylesheet href="css/style.css"/>
-        <link rel=stylesheet href="css/lightbox.css" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    </head>
-    <body>
-        <div id='mainwrapper'> 
-        <a href="index.php"><img id='logo' src='images/chillfredlogo.jpg' alt='Fred Logo'></a>
-            
-    
-            
-            <H1 id='fredtext'>FRED WILDLIFE REFUGE</H1>
-
- 
-            <!--begin navigation -->
-<?php function wp_list_pages( array('main_menu' =>  __('Main Menu' )) ); ?>
-            
-            <!--end navigation -->
+<?php
+include 'header.php';
+?>
             <!--beging content -->
 
             <div id='content'>        
@@ -71,14 +48,6 @@
         <br/><br/><br/> <br/><br/><br/>
         </aside>
  
-    <!--end content -->   
-     </div> 
-<div id='footercontainer'>
-        <div id='footer'>
-     <footer>SICK FOOTER GOES HERE</footer>
-    </div>
-</div>    
-</div> 
-<script src="js/lightbox-plus-jquery.js"></script>
-    </body>
-    </html>
+    <?php
+include 'footer.php';
+?>
