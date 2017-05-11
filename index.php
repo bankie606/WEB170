@@ -5,6 +5,7 @@ include 'header.php';
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+<body <?php body_class(); ?>>
 
             <!--begin content -->
             <div id='content'>        
