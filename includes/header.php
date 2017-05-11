@@ -11,7 +11,7 @@
     </head>
     <body data-feedly-mini="yes">
         <div id="mainwrapper"> 
-        <a href="http://ridethegrid.net/web200/final/index.php"><img id="logo" src="images/chillfredlogo.jpg" alt="Fred Logo"></a>
+        <a href="http://web170.frcrescioni.net/wordpress/"><img id="logo" src="<?php echo get_bloginfo('template_url') ?>/images/chillfredlogo.jpg" alt="Fred Logo"></a>
             
     
             
@@ -21,7 +21,7 @@
             <!--begin navigation -->
       
             
-  <nav id="desktopNav">
+  <nav class="menu">
       <ul id="menu-bar">
             
  <li><a href="#">ABOUT FRED</a></li>
@@ -41,8 +41,8 @@
             </ul>
             </li>
  <li><a href="#">CONTACT</a></li>
-    <li><a href="https://www.facebook.com/fredwildliferefuge/?fref=ts" rel="nofollow" target="_blank"><span class="menuicon"><img src="<?php bloginfo('template_directory'); ?> /images/facebookicon.png" id="facebookicon" alt="facebook icon"></span></a></li>
-    <li><a href="https://twitter.com/fredwildlife" rel="nofollow" target="_blank"><span class="menuicon"><img src="images/twittericon.png" id="twittericon" alt="twitter icon"></span></a></li>
+    <li><a href="https://www.facebook.com/fredwildliferefuge/?fref=ts" rel="nofollow" target="_blank"><span class="menuicon"><img src="<?php bloginfo('template_directory'); ?>/images/facebookicon.png" id="facebookicon" alt="facebook icon"></span></a></li>
+    <li><a href="https://twitter.com/fredwildlife" rel="nofollow" target="_blank"><span class="menuicon"><img src="<?php echo get_bloginfo('template_url') ?>/images/twittericon.png" id="twittericon" alt="twitter icon"></span></a></li>
 </ul>            
         </nav>
             
@@ -62,4 +62,9 @@
             
             
             <!--end navigation -->
-            <!--beging content -->
+<video autoplay muted poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" class="backgroundvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source id='motionbackground' src="http://ridethegrid.net/web200/final/media/guitartime.mp4" type="video/mp4">
+</video>
+
+            <!--begin content -->
