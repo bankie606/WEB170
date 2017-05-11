@@ -29,10 +29,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 register_nav_menus(array('main_menu' =>  __('Main Menu' )));
 //
 
-//LIST PAGES
-wp_list_pages( array('main_menu' =>  __('Main Menu' )) );
     
-    
-    
+
+
 
 ?>
