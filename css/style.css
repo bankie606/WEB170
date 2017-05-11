@@ -1,3 +1,339 @@
+/*
+Theme Name: Funky Freddy
+Theme URI: http://github.com/bankie606
+Author: F. Crescioni
+Author URI: http://frcrescioni.net/
+Description: A theme for one of the funkiest places in Seattle.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, pink, transparent, textshadow, cool,
+Text Domain: funkyfreddy
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+#menu-bar {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 4px 14px 4px 10px;
+  height: 90%;
+  line-height: 100%;
+  border-radius: 19px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  box-shadow: 0px 0px 0px #666666;
+  -webkit-box-shadow: 0px 0px 0px #666666;
+  -moz-box-shadow: 0px 0px 0px #666666;
+  background: #8B8B8B;
+  background: linear-gradient(top,  #DE2E92,  #D93E99);
+  background: -ms-linear-gradient(top,  #DE2E92,  #D93E99);
+  background: -webkit-gradient(linear, left top, left bottom, from(#DE2E92), to(#D93E99));
+  background: -moz-linear-gradient(top,  #DE2E92,  #D93E99);
+  position:relative;
+  z-index:999;
+}
+#menu-bar li {
+  margin: 0px 0px 0px 0px;
+  padding: 4px 16px 0px 6px;
+  float: left;
+  position: relative;
+  list-style: none;
+  border-left: 2px solid #000;
+}
+
+#menu-bar li:last-child{
+border-right: 2px solid #000;
+}
+
+#menu-bar a {
+  font-weight: bold;
+  font-family: helvetica;
+  font-style: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px 6px 20px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  text-shadow: -1px 2px 2px #000000;
+}
+#menu-bar li ul li a {
+  margin: 0;
+}
+#menu-bar .active a, #menu-bar li:hover > a {
+ /* background: #32ACE2;
+  background: linear-gradient(top,  #32ACED,  #32ACE2);
+  background: -ms-linear-gradient(top,  #32ACED,  #32ACE2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#32ACE2), to(#32ACED));
+  background: -moz-linear-gradient(top,  #32ACED,  #32ACE2);*/
+  color: #000;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu-bar ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #32ACE2,  #3EACE9) !important;
+  background: -ms-linear-gradient(top,  #32ACE2,  #3EACE9) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#32ACE2), to(#3EACE9)) !important;
+  background: -moz-linear-gradient(top,  #32ACE2,  #3EACE9) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 0px 0px 3px #FFFFFF;
+}
+#menu-bar li:hover > ul {
+  display: block;
+}
+#menu-bar ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #DE2E92,  #D92E9E);
+  background: -ms-linear-gradient(top,  #DE2E92,  #D92E9E);
+  background: -webkit-gradient(linear, left top, left bottom, from(#DE2E92), to(#D92E9E));
+  background: -moz-linear-gradient(top,  #DE2E92,  #D92E9E);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 128px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: outset 1px #B4B4B4;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 0px #222222;
+  -moz-box-shadow: 0px 0px 0px #222222;
+  box-shadow: 0px 0px 0px #222222;
+}
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:10px 0px 10px 4px;
+  color:#FFFFFF !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-shadow: 0px -1px 3px #FFFFFF;
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+}
+
+.menuicon{
+    vertical-align: text-bottom;
+    float:right;
+}
+
+.menuicon:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+}
+
+
+
+/*
+
+mobile menu*/
+/* mobile menu*/
+#mobileNav {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 4px 14px 4px 10px;
+  height: 90%;
+  line-height: 100%;
+  border-radius: 19px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  box-shadow: 0px 0px 0px #666666;
+  -webkit-box-shadow: 0px 0px 0px #666666;
+  -moz-box-shadow: 0px 0px 0px #666666;
+  background: #8B8B8B;
+  background: linear-gradient(top,  #DE2E92,  #D93E99);
+  background: -ms-linear-gradient(top,  #DE2E92,  #D93E99);
+  background: -webkit-gradient(linear, left top, left bottom, from(#DE2E92), to(#D93E99));
+  background: -moz-linear-gradient(top,  #DE2E92,  #D93E99);
+  text-align:center;
+  float:left;
+  display:none;
+  border-style: double;
+  border-color: #ffffff;
+}
+#mobileNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  
+}
+#mobileNav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#mobileNav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#mobileNav.align-right ul li {
+  float: right;
+}
+#mobileNav.align-center ul {
+  text-align: center;
+}
+#mobileNav ul li a {
+  color:#FFFFFF !important;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-shadow: 0px -1px 3px #FFFFFF;
+  display: block;
+  padding: 3px 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#mobileNav ul li a:hover {
+  color: #000;
+  text-shadow: 2px 2px 4px #6F6363 
+}
+#mobileNav ul li a:hover:before {
+  width: 100%;
+}
+#mobileNav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: 1;
+}
+#mobileNav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #FFFFFF;
+  -webkit-transition: width .5s;
+  -moz-transition: width .5s;
+  -ms-transition: width .5s;
+  -o-transition: width .5s;
+  transition: width .5s;
+}
+#mobileNav ul li.last > a:after,
+#mobileNav ul li:last-child > a:after {
+  display: none;
+}
+#mobileNav ul li.active a {
+  color: #fff0ff;
+    text-shadow: 1px 1px 2px #fff;
+}
+#mobileNav ul li.active a:before {
+  width: 100%;
+}
+#mobileNav.align-right li.last > a:after,
+#mobileNav.align-right li:last-child > a:after {
+  display: block;
+}
+#mobileNav.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #mobileNav ul li {
+    float: none;
+    display: block;
+  }
+  #mobileNav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #666633;
+    text-shadow: -1px 2px 2px #000000;
+  }
+  #mobileNav ul li.last > a,
+  #mobileNav ul li:last-child > a {
+    border: 0;
+  }
+  #mobileNav ul li a:after {
+    display: none;
+  }
+  #mobileNav ul li a:before {
+    display: none;
+  }
+}
+
+
+
+
+
 html,
 body {
 	margin:0;
@@ -551,6 +887,12 @@ article {
         display: none;
         }
     }
+
+
+
+
+
+
 
 
 
