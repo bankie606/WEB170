@@ -46,6 +46,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 border-right: 2px solid #000;
 }
 
+#menu-bar li:first-child{
+border-left:none;
+}
+
 #menu-bar a {
   font-weight: bold;
   font-family: helvetica;
@@ -548,7 +552,7 @@ top:100%;
 left:0;
 color:white;
 display: block;    
-font-size: 2em;
+font-size: 1em;
 max-width: 1280px;
 padding:4px;
 margin:1px;
@@ -818,11 +822,11 @@ article {
 }
        
         
-        footer{
+        #footer{
         display: none;
         }
 
-        #desktopNav{
+        #menu-bar{
         display: none;
         }
 
@@ -869,7 +873,7 @@ article {
 		}
 		
         
-        #desktopNav{
+        #menu-bar{
         display: none;
         }
         
@@ -883,11 +887,10 @@ article {
             right:0px;
 }
     
-        footer{
+        #footer{
         display: none;
         }
     }
-
 
 
 
