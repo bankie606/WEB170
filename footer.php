@@ -1,5 +1,5 @@
     <!--end content -->   
-     </div> 
+     
 <div id='footercontainer'>
         <div id='footer'>
      <footer>127 Boylston Ave East (Office / Studio 2)
@@ -10,8 +10,10 @@ Seattle, WA 98102
 fred@fredwildliferefuge.com
 Tel: 206.588.6959</footer>
     </div>
-</div>    
 </div> 
+</div> <!-- end main contentwrapper -->
+</div>
+
 <script src="js/lightbox-plus-jquery.js"></script>
     </body>
     </html>

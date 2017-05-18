@@ -1,6 +1,6 @@
-@@ -0,0 +1,48 @@
+
 <?php
-include 'header.php';
+get_header();
 ?>
 
 
@@ -45,5 +45,5 @@ Tel: 206.588.6959
 
 
 <?php
-include 'footer.php';
+get_footer();
 ?>

@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+get_header();
 ?>
 
 
@@ -22,5 +22,5 @@ include 'header.php';
 
 
     <?php
-include 'footer.php';
+get_footer();
 ?>
