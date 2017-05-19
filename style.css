@@ -13,7 +13,7 @@ Text Domain: funkyfreddy
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-#menu-bar {
+#navigation {
   width: 100%;
   margin: 0px 0px 0px 0px;
   padding: 4px 14px 4px 10px;
@@ -33,7 +33,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   position:relative;
   z-index:999;
 }
-#menu-bar li {
+#navigation li {
   margin: 0px 0px 0px 0px;
   padding: 4px 16px 0px 6px;
   float: left;
@@ -42,15 +42,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-left: 2px solid #000;
 }
 
-#menu-bar li:last-child{
+#navigation li:last-child{
 border-right: 2px solid #000;
 }
 
-#menu-bar li:first-child{
+#navigation li:first-child{
 border-left:none;
 }
 
-#menu-bar a {
+#navigation a {
   font-weight: bold;
   font-family: helvetica;
   font-style: normal;
@@ -66,10 +66,10 @@ border-left:none;
   -moz-border-radius: 11px;
   text-shadow: -1px 2px 2px #000000;
 }
-#menu-bar li ul li a {
+#navigation li ul li a {
   margin: 0;
 }
-#menu-bar .active a, #menu-bar li:hover > a {
+#navigation .active a, #navigation li:hover > a {
  /* background: #32ACE2;
   background: linear-gradient(top,  #32ACED,  #32ACE2);
   background: -ms-linear-gradient(top,  #32ACED,  #32ACE2);
@@ -78,7 +78,7 @@ border-left:none;
   color: #000;
   text-shadow: 2px 2px 3px #FFFFFF;
 }
-#menu-bar ul li:hover a, #menu-bar li:hover li a {
+#navigation ul li:hover a, #navigation li:hover li a {
   background: none;
   border: none;
   color: #666;
@@ -86,7 +86,7 @@ border-left:none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
-#menu-bar ul a:hover {
+#navigation ul a:hover {
   background: #0399D4 !important;
   background: linear-gradient(top,  #32ACE2,  #3EACE9) !important;
   background: -ms-linear-gradient(top,  #32ACE2,  #3EACE9) !important;
@@ -98,10 +98,10 @@ border-left:none;
   -moz-border-radius: 0;
   text-shadow: 0px 0px 3px #FFFFFF;
 }
-#menu-bar li:hover > ul {
+#navigation li:hover > ul {
   display: block;
 }
-#menu-bar ul {
+#navigation ul {
   background: #DDDDDD;
   background: linear-gradient(top,  #DE2E92,  #D92E9E);
   background: -ms-linear-gradient(top,  #DE2E92,  #D92E9E);
@@ -122,12 +122,12 @@ border-left:none;
   -moz-box-shadow: 0px 0px 0px #222222;
   box-shadow: 0px 0px 0px #222222;
 }
-#menu-bar ul li {
+#navigation ul li {
   float: none;
   margin: 0;
   padding: 0;
 }
-#menu-bar ul a {
+#navigation ul a {
   padding:10px 0px 10px 4px;
   color:#FFFFFF !important;
   font-size:12px;
@@ -136,7 +136,7 @@ border-left:none;
   font-weight: normal;
   text-shadow: 0px -1px 3px #FFFFFF;
 }
-#menu-bar ul li:first-child > a {
+#navigation ul li:first-child > a {
   border-top-left-radius: 6px;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -144,7 +144,7 @@ border-left:none;
   -webkit-border-top-right-radius: 6px;
   -moz-border-radius-topright: 6px;
 }
-#menu-bar ul li:last-child > a {
+#navigation ul li:last-child > a {
   border-bottom-left-radius: 6px;
   -webkit-border-bottom-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
@@ -152,7 +152,7 @@ border-left:none;
   -webkit-border-bottom-right-radius: 6px;
   -moz-border-radius-bottomright: 6px;
 }
-#menu-bar:after {
+#navigation:after {
   content: ".";
   display: block;
   clear: both;
@@ -160,13 +160,13 @@ border-left:none;
   line-height: 0;
   height: 0;
 }
-#menu-bar {
+#navigation {
   display: inline-block;
 }
-  html[xmlns] #menu-bar {
+  html[xmlns] #navigation {
   display: block;
 }
-* html #menu-bar {
+* html #navigation {
   height: 1%;
 }
 
@@ -461,6 +461,7 @@ text-shadow: 0 1px 0 #ccc,
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+background-color: #fff;
 }
 
 #logo {
@@ -822,11 +823,11 @@ article {
 }
        
         
-        footer{
+        #footer{
         display: none;
         }
 
-        #desktopNav{
+        #navigation{
         display: none;
         }
 
@@ -873,7 +874,7 @@ article {
 		}
 		
         
-        #desktopNav{
+        #navigation{
         display: none;
         }
         
@@ -887,11 +888,10 @@ article {
             right:0px;
 }
     
-        footer{
+        #footer{
         display: none;
         }
     }
-
 
 
 

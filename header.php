@@ -16,13 +16,24 @@
     
             
             <h1 id="fredtext">FRED WILDLIFE REFUGE</h1>
+<!-- Begin Navigation -->
 
+
+
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'nav','container_id' => 'navigation', 'items_wrap' => '<ul id="navigation" class="%2$s">%3$s</ul>', ) ); ?>
+ 
+
+            
+          
+          <!-- End Navigation -->
+        
  
             <!--begin navigation -->
       
             
+<!--
   <nav class="menu">
-      <ul id="menu-bar">
+      <ul id="navigation-items">
             
  <li><a href="#">ABOUT FRED</a></li>
  <li class="active"><a href="#">EVENTS</a>
@@ -40,13 +51,15 @@
    <li><a href="#">Become a Partner</a></li>
             </ul>
             </li>
+-->
+<!--
  <li><a href="#">CONTACT</a></li>
     <li><a href="https://www.facebook.com/fredwildliferefuge/?fref=ts" rel="nofollow" target="_blank"><span class="menuicon"><img src="<?php bloginfo('template_directory'); ?>/images/facebookicon.png" id="facebookicon" alt="facebook icon"></span></a></li>
     <li><a href="https://twitter.com/fredwildlife" rel="nofollow" target="_blank"><span class="menuicon"><img src="<?php echo get_bloginfo('template_url') ?>/images/twittericon.png" id="twittericon" alt="twitter icon"></span></a></li>
 </ul>            
         </nav>
             
-            <!-- Begin Mobile Navigation -->
+             Begin Mobile Navigation 
 <nav id="mobileNav">
     <ul>
     <li><a href="#">ABOUT FRED</a></li>
@@ -57,6 +70,7 @@
     <li><a href="#">CONTACT</a></li>
     </ul>
 </nav>
+-->
 <!-- End Mobile Navigation -->
             
             
