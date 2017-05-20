@@ -825,7 +825,7 @@ article {
         }
 
         #navigation{
-        display: block;
+        display: inline-block;
         }
 
         #mobileNav{
@@ -872,7 +872,7 @@ article {
 		
         
         #navigation{
-        display: block;
+        display: inline-block;
         }
         
         #mobileNav{
