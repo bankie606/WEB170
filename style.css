@@ -771,9 +771,6 @@ article {
             
 		}
 
-        #desktopNav{
-                display: block;
-        }
 
         #mobileNav{
         display: none;
@@ -828,11 +825,11 @@ article {
         }
 
         #navigation{
-        display: none;
+        display: block;
         }
 
         #mobileNav{
-        display: block;
+        display: none;
         }
         
     }
@@ -875,7 +872,7 @@ article {
 		
         
         #navigation{
-        display: none;
+        display: block;
         }
         
         #mobileNav{
