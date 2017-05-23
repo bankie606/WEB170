@@ -19,13 +19,11 @@
 
 <?php wp_nav_menu( 
 	array( 
-	'menu' => '', 
+	'theme_location' => 'main-menu', 
 	'container' => 'ul', 
-	'container_class' => '', 
 	'menu_id' => 'navigation', 
  	'items_wrap' => '<ul></ul>', 
-	'item_spacing' => 'preserve',
-    	'theme_location' => 'main-menu', 
+    	
 	) 
 ); 
 ?>
@@ -41,4 +39,3 @@
 </video>
 
             <!--begin content -->
-            
