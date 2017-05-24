@@ -29,8 +29,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 register_nav_menus(array('main_menu' =>  __('Main Menu' )));
 //
 
-    
+//Register Widgets
+register_sidebar(array(
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' 
+	)); 
 
+
+//Add thumbnails to posts
+add_theme_support('post-thumbnails');
 
 
 ?>

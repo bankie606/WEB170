@@ -31,6 +31,8 @@
 
 
 
+<?php get_sidebar(); ?>
+
           
         <!--End Navigation -->
 <video autoplay muted poster="http://web170.frcrescioni.net/wordpress/wp-content/uploads/2017/04/chillfredlogo.jpg" id="bgvid" class="backgroundvid" loop>

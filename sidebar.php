@@ -1,4 +1,5 @@
 <!-- Begin Sidebar -->
+<aside>
 <div id="sidebar">
    
     <!-- Begin Sub-Navigation -->
@@ -38,4 +39,5 @@
     <!-- End Dynamic Sidebar -->
        
 </div>
+</aside>
 <!-- End Sidebar -->
