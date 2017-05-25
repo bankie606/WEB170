@@ -583,9 +583,9 @@ clear:both;
   background: rgba(222,22,146,0.63);
   color: white;
   padding: 2rem;
-  width: 80%;
+  width: 75%;
   float:none;
-  display:inline-block;
+  display:block;
   font-size: 1.rem;
 }
 
@@ -907,3 +907,13 @@ article {
         display: none;
         }
     }
+
+
+
+
+
+
+
+
+
+

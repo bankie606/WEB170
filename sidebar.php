@@ -3,7 +3,7 @@
 <div id="sidebar">
    
     <!-- Begin Sub-Navigation -->
-    <div id="sub-navigation" class="widget">
+    <div id="sub-navigation" class="widget cooltext">
     <?php if (is_page()) : // if we are in "pages"... ?>
     <h2 class="sub-navigation-title">
     <?php echo get_the_title($post->post_parent); // ...get the gateway page title ?></h2>
@@ -29,13 +29,17 @@
     <!-- End Sub-Navigation -->
     
     <!-- Begin Quotes -->
+    <div class="cooltext">
     <?php if (get_post_meta($post->ID, 'Quote', true)) : // check to see if there is a quote ?>
     <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); // write out the quote ?></blockquote>
     <?php endif; ?>
+    </div>
     <!-- End Quotes -->
     
     <!-- Begin Dynamic Sidebar -->
+     <div class="cooltext">
     <?php dynamic_sidebar(1); // call our widgets ?>
+	</div>
     <!-- End Dynamic Sidebar -->
        
 </div>
