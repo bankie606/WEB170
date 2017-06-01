@@ -506,17 +506,17 @@ max-width: 800px;
 min-width: 320px;
 }
 
-video { 
+#video { 
     position: fixed;
-    top: 85%;
+    top: 88%;
     left: 50%;
     min-width: 10%;
     min-height: 80%;
-    width: auto;
+    width: 960px;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+ background: url('http://web170.frcrescioni.net/wordpress/wp-content/themes/template/images/chillfredlogo.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -726,6 +726,154 @@ behavior: url(pie/PIE.htc);
 
 
 
+
+/* Styles for  URL box */ 
+
+.url-box {
+  background: rgba(222,22,146,0.63);
+  display: inline-block;
+  height: 30px;
+  border: none;
+  border-bottom: 4px solid #b3b3b1;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 0px;
+  width: 50%;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: 100;
+  color: #000;
+}
+
+#go {
+    display: inline-block;
+    float: right;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: rgba(222,22,146,0.63);
+    padding: 0px;
+    border: 4px solid #b3b3b1;
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    bottom: 30px;
+    right: 120px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 100;
+    color: #000;
+}
+
+/* Styles for image container*/
+
+#imageContainer {
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  float: left;
+  margin: 20px;
+}
+
+#imageContainer img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Styles for sliders*/
+
+.sliders {
+    display: inline-block;
+    position: absolute;
+    border: 5px solid grey;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 1px;
+    padding-bottom: 8px;
+    width: 80%;
+    background: rgba(222,22,146,0.63);
+}
+
+.sliders p {
+  margin: 1px 0;
+  float:left;
+
+}
+
+.sliders label {
+  display: block;
+  margin: 10px 0 0 0;
+  width: 100px;
+  font-size: 16px;
+  color: #22313F;
+  text-align: left;
+}
+
+.sliders input {
+  display: block;
+  position: relative;
+  margin: 10px 20px 0 10px;
+}
+
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border-radius: 5px;
+  /*required for proper track sizing in FF*/
+  width: 150px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 7px;
+  background: #ABB7B7;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #4B77BE;
+  margin-top: -6px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:hover {
+	cursor: pointer;
+}
+
+
+#reset {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  background-color: transparent;
+  padding: 0px;
+  border: 4px solid #b3b3b1;
+  border-radius: 10px;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 100;
+  color: #000;
+  margin: 0 0 10px 0;
+  bottom: -8px;
+}
 
 
 /* RESPONSIVE BREAK POINTS AND STYLES */

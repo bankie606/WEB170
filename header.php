@@ -26,18 +26,18 @@
     	
 	) 
 ); 
+	
+
 ?>
  
 
 
-
 <?php get_sidebar(); ?>
-
           
         <!--End Navigation -->
-<video autoplay muted poster="http://web170.frcrescioni.net/wordpress/wp-content/uploads/2017/04/chillfredlogo.jpg" id="bgvid" class="backgroundvid" loop>
-  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source id='motionbackground' src="http://ridethegrid.net/web200/final/media/guitartime.mp4" type="video/mp4">
-</video>
-
+<div id="video">
+<div id="imageContainer" class="center">
+  <img src="http://web170.frcrescioni.net/wordpress/wp-content/uploads/2017/06/guitartime.gif">
+</div>
+</div>
             <!--begin content -->
