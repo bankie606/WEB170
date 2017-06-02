@@ -26,8 +26,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 //Register Menu Locations
-register_nav_menus(array('main_menu' =>  __('Main Menu' )));
-//
+register_nav_menus(array('main-menu' => 'Main Menu' ));
+
+
+
 
 //Register Widgets
 register_sidebar(array(
