@@ -361,7 +361,7 @@ position:relative;
 }
 
 #content{
-padding-bottom:60px; /* Height of the footer element */
+padding-bottom:420px; /* Height of the footer element */
 }
 
 #contactformcontainer{
@@ -379,6 +379,17 @@ max-width: 780px;
 	width:90%;
 	margin:auto; 
  }
+
+.headerlink{
+text-decoration:none;
+color: #fff;
+text-shadow: -1px 2px 2px #000000;
+}
+
+.headerlink:hover{
+color: #000;
+ text-shadow: 2px 2px 3px #FFFFFF;
+}
 
 
 .backgroundchangebutton{
@@ -1039,11 +1050,17 @@ article {
         display: block;
         }
         
+	#sidebar {
+		display: none;
+		}
+
+
         aside{
         float:none;
        width:100%;
             right:0px;
-}
+	}
+
 	#fredtext{
 	font-size: 32px;
 	}    
@@ -1053,13 +1070,3 @@ article {
         display: none;
         }
     }
-
-
-
-
-
-
-
-
-
-

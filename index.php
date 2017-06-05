@@ -10,7 +10,7 @@ get_header();
             <!--begin content -->
             <div id='content'>        
     
-        <span class='coolborder'><h2><a href="<?php the_permalink(); // link to the page or posting ?>"><?php the_title(); ?></a></h2></span>
+        <span class='coolborder'><h2><a class="headerlink" href="<?php the_permalink(); // link to the page or posting ?>"><?php the_title(); ?></a></h2></span>
 	<?php the_content(''); ?>
 
         
