@@ -14,6 +14,17 @@ get_header();
 	<?php the_content(''); ?>
 
         
+                <!--flexslider -->
+                
+                
+    <? get_flexslider(); ?>
+                
+                
+                <!--end flexslider-->
+                
+              
+                
+                
  
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

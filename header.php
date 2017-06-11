@@ -5,30 +5,41 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Fred Wildlife Refuge</title>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css"type="text/css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+
+
+<!-- begin flex slider -->
+<script type="text/javascript" charset="utf-8">
+ $(window).load(function() { //enable function upon window load
+	$('.flexslider').flexslider(); // call flexslider function
+	});
+</script>
+<!-- end flex slider -->
     </head>
-    <body data-feedly-mini="yes">
+
+
+
+    <body>
         <div id="mainwrapper"> 
         <a href="http://web170.frcrescioni.net/wordpress/"><img id="logo" src="<?php echo get_bloginfo('template_url') ?>/images/chillfredlogo.jpg" alt="Fred Logo"></a>
             
-    
-            
+   
+
             <h1 id="fredtext">FRED WILDLIFE REFUGE</h1>
 	<!-- Begin Navigation -->
 
 
 
-<?php wp_nav_menu( 
-	array( 
+<?php wp_nav_menu( array( 
 	'theme_location' => 'main-menu', 
-	'container' => 'ul', 
-	'menu_id' => 'navigation', 
- 	'items_wrap' => '<ul></ul>', 
-    	
-	) 
-); 
-	
-
-?>
+	'container' => '<ul>', 
+	'menu_id' => 'navigation',
+	));?>
  
 
 

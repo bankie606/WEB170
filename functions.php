@@ -44,4 +44,23 @@ register_sidebar(array(
 add_theme_support('post-thumbnails');
 
 
+  //create a flexslider gallery from attachment images
+    function get_flexslider() {
+	
+    global $post; // don't forget to make this a global variable inside your function
+    $attachments = get_children(array('post_parent' => $post->ID,'post_type' => 'attachment', 'post_mime_type' => 'image'. 'order' =>'ASC', 'orderby' => 'menu_order'));
+    if ($attachments) { // see if there are images attached to posting
+        echo '<div class="flexslider">';
+        echo '<ul class="slides">';
+        foreach ( $attachments as $attachment ) { // create the list items for images with captions
+            echo '<li>';
+            echo wp_get_attachment_image($attachment->ID, 'large'); // get image size large
+            echo get_post_field('post_content', $attachment->ID); // get image description field
+            echo '</li>';
+        }
+        echo '</ul>';
+        echo '</div>';
+    } // end see if images attached
+} 
+
 ?>
