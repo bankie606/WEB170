@@ -16,7 +16,7 @@ get_header();
 	 <?php get_flexslider(); ?>
 
 <small>Posted on <?php the_time('F j, Y'); //get the time ?> by <?php the_author(); //get author name ?> in <?php the_category(', ');// get the category ?></small>
-           <?php the_excerpt(); //get the posting's excerpt ?>
+                <div class="cooltext"><?php the_excerpt(); //get the posting's excerpt ?></div>
 
 		
 <?php if ( has_post_thumbnail() ) : ?>
