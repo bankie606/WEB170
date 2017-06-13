@@ -41,14 +41,39 @@ register_sidebar(array(
 
 
 //Add thumbnails to posts
-add_theme_support('post-thumbnails');
+if ( function_exists( 'add_theme_support' ) ) { 
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
+
+    // additional image sizes
+    // delete the next line if you do not need additional image sizes
+    add_image_size( 'category-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
+}
+
+/**
+ * Link all post thumbnails to the post permalink.
+ *
+ * @param string $html          Post thumbnail HTML.
+ * @param int    $post_id       Post ID.
+ * @param int    $post_image_id Post image ID.
+ * @return string Filtered post image HTML.
+ */
+function wpdocs_post_image_html( $html, $post_id, $post_image_id ) {
+    $html = '<a href="' . get_permalink( $post_id ) . '" alt="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+    return $html;
+}
+add_filter( 'post_thumbnail_html', 'wpdocs_post_image_html', 10, 3 );
+
+
+
+
 
 
   //create a flexslider gallery from attachment images
     function get_flexslider() {
 	
     global $post; // don't forget to make this a global variable inside your function
-    $attachments = get_children(array('post_parent' => $post->ID,'post_type' => 'attachment', 'post_mime_type' => 'image'. 'order' =>'ASC', 'orderby' => 'menu_order'));
+    $attachments = get_children(array('post_parent' => $post->ID,'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' =>'ASC', 'orderby' => 'menu_order'));
     if ($attachments) { // see if there are images attached to posting
         echo '<div class="flexslider">';
         echo '<ul class="slides">';
