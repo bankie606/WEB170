@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Fred Wildlife Refuge</title>
+        <title><?php get_title_tag(); ?></title>
+	<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
+	<meta name="keywords" content="<?php echo bloginfo('description'); ?>" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css"type="text/css">
 	<script

@@ -64,9 +64,38 @@ function wpdocs_post_image_html( $html, $post_id, $post_image_id ) {
 }
 add_filter( 'post_thumbnail_html', 'wpdocs_post_image_html', 10, 3 );
 
+//enable excerpts for meta description
+add_post_type_support( 'page', 'excerpt' );
+$excerpt = get_the_excerpt( $post );
 
 
 
+//SEO title grabber
+function get_title_tag() {
+	
+		global $post;
+			if (is_front_page()) { // for the front page of the site
+				bloginfo('description'); //tagline
+			} elseif (is_page()) { //if not frontpage
+				the_title(); //get page title
+				if ($post->post_parent) { // if page has parent
+				echo ' @ '; //separator
+				echo get_the_title($post->post_parent); //retrieve the parent page title
+				}
+
+				}elseif (is_category()) { //site categories
+				echo get_the_category()[0]->cat_name;
+                }elseif (is_single()) { //single post
+					the_title(); //postingtitle
+				} else {
+				bloginfo('description'); //snatch the tagline
+				}
+    				echo ' @ '; // separator with spaces
+    				bloginfo('name'); // retrieve the site name
+    				echo ' @ '; // separator with spaces
+    				bloginfo ('url'); // write in the web address for early 2000s vibes
+	
+}
 
 
   //create a flexslider gallery from attachment images
