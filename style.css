@@ -128,6 +128,7 @@ border-left:none;
   -webkit-box-shadow: 0px 0px 0px #222222;
   -moz-box-shadow: 0px 0px 0px #222222;
   box-shadow: 0px 0px 0px #222222;
+  z-index: 1000;
 }
 #navigation ul li {
   float: none;
@@ -143,22 +144,7 @@ border-left:none;
   font-weight: normal;
   text-shadow: 0px -1px 3px #FFFFFF;
 }
-#navigation ul li:first-child > a {
-  border-top-left-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topleft: 6px;
-  border-top-right-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
-}
-#navigation ul li:last-child > a {
-  border-bottom-left-radius: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomleft: 6px;
-  border-bottom-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-}
+
 #navigation:after {
   content: ".";
   display: block;
@@ -190,7 +176,22 @@ border-left:none;
     -ms-filter: invert(100%);
 }
 
-
+#navigation ul li:first-child > a {
+  border-top-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+}
+#navigation ul li:last-child > a {
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
 
 /*
 
@@ -198,10 +199,8 @@ mobile menu*/
 /* mobile menu*/
 #mobileNav {
   font-family: 'Josefin Sans', sans-serif;
-  width: 100%;
   margin: 0px 0px 0px 0px;
   padding: 4px 14px 4px 10px;
-  height: 90%;
   line-height: 100%;
   border-radius: 19px;
   -webkit-border-radius: 19px;
@@ -465,8 +464,9 @@ max-width: 400px;
 #fredtext{
 font-size: 64px;
 margin: 0 auto;
-float: right;
+text-align: right;
 display: inline-block;
+padding: 10px;
 text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -519,7 +519,7 @@ min-width: 320px;
 
 #video { 
     position: fixed;
-    top: 88%;
+    top: 98%;
     left: 50%;
     min-width: 10%;
     min-height: 80%;
@@ -528,7 +528,7 @@ min-width: 320px;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
  background: url('http://web170.frcrescioni.net/wordpress/wp-content/themes/template/images/chillfredlogo.jpg') no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   transition: 1s opacity;
 }
 
@@ -548,7 +548,7 @@ background: linear-gradient(top,  #DE2E92,  #D93E99);
 background: -ms-linear-gradient(top,  #DE2E92,  #D93E99);
 background: -webkit-gradient(linear, left top, left bottom, from(#DE2E92), to(#D93E99));
 background: -moz-linear-gradient(top,  #DE2E92,  #D93E99);
-position:relative;
+position: initial;
 z-index:129;    
 }
 
@@ -625,6 +625,11 @@ display:inline-block;
 font-size: 1.rem;
 }
 
+
+.sub-navigation-items{
+color:white;
+text-decoration:none;
+}
 
 
 ul.enlarge{
@@ -782,17 +787,12 @@ behavior: url(pie/PIE.htc);
 /* Styles for image container*/
 
 #imageContainer {
-  border: 2px solid grey;
-  border-radius: 10px;
-  padding: 5px;
   width: 100%;
-  float: left;
-  margin: 20px;
 }
 
 #imageContainer img {
+ width: 100%;
   border-radius: 10px;
-  width: 100%;
 }
 
 /* Styles for sliders*/
@@ -888,7 +888,7 @@ input[type=range]:hover {
 /* RESPONSIVE BREAK POINTS AND STYLES */
 	
 	/* DESKTOP Layout and Sizing */
-	@media all and (min-width:780px) {
+	@media all and (min-width:960px) {
 		body {
 			background:#fff;
 			width:100%;
@@ -898,14 +898,15 @@ input[type=range]:hover {
 		}
 
 
-article {
-				float:left;
-				width:48%;
+		article {
+			margin: 0 auto;
+    			width: 90%;
+    			max-width: 900px;
 		}
 		
 		article h2 {
 			font-size:2em;
-            margin: 0 auto;
+            		margin: 0 auto;
 			margin-bottom:.20em;
 		}
 		
@@ -941,13 +942,21 @@ article {
 		}
 
 
+        #navigation{
+        display: inline-block;
+        }
+
         #mobileNav{
         display: none;
         }
 
+		.button-group{
+		display: none;
+		}
+
 }
 /* TABLET Layout and Sizing */ 
-	@media all and (min-width:481px) and (max-width:779px) {
+	@media all and (min-width:481px) and (max-width:959px) {
 		 body {
 			 width:80%;
              margin:0 auto;
@@ -985,23 +994,26 @@ article {
 		font-size: 40px;
 		}
         
-        aside{
-        float:none;
-    width:auto;
-}
-       
+     
+		#sidebar {
+		display: none;
+		}
         
         #footer{
         display: none;
         }
 
         #navigation{
-        display: inline-block;
+        display: none;
         }
 
         #mobileNav{
-        display: none;
+        display: inline-block;
         }
+
+		.button-group{
+		display: inline-block;
+		}
         
     }
 
@@ -1043,12 +1055,16 @@ article {
 		
         
         #navigation{
+        display: none;
+        }
+
+        #mobileNav{
         display: inline-block;
         }
-        
-        #mobileNav{
-        display: block;
-        }
+
+		.button-group{
+		display: inline-block;
+		}
         
 	#sidebar {
 		display: none;

@@ -9,11 +9,13 @@
 
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css"type="text/css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/slidebars.css"type="text/css">
 	<script
   src="https://code.jquery.com/jquery-2.2.4.js"
   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
   crossorigin="anonymous"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/scripts/slidebars.js"></script>
 
 
 <!-- begin flex slider -->
@@ -28,6 +30,7 @@
 
 
     <body>
+	<div canvas="container" id="sb-site">
         <div id="mainwrapper"> 
         <a href="http://web170.frcrescioni.net/wordpress/"><img id="logo" src="<?php echo get_bloginfo('template_url') ?>/images/chillfredlogo.jpg" alt="Fred Logo"></a>
             
@@ -44,6 +47,15 @@
 	'menu_id' => 'navigation',
 	));?>
  
+
+
+
+
+<div class="button-group">
+								<span class="button toggle-id-1"><i class="fa fa-eye"></i>MENu</span>
+							</div>
+
+
 
 
 <?php get_sidebar(); ?>

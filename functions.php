@@ -28,7 +28,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 //Register Menu Locations
 register_nav_menus(array('main-menu' => 'Main Menu' ));
 
-
+function register_my_menu() {
+  register_nav_menu('new-menu',__( 'Slide Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 
 
 //Register Widgets
@@ -65,8 +68,6 @@ function wpdocs_post_image_html( $html, $post_id, $post_image_id ) {
 add_filter( 'post_thumbnail_html', 'wpdocs_post_image_html', 10, 3 );
 
 //enable excerpts for meta description
-add_post_type_support( 'page', 'excerpt' );
-$excerpt = get_the_excerpt( $post );
 
 
 
@@ -93,28 +94,11 @@ function get_title_tag() {
     				echo ' @ '; // separator with spaces
     				bloginfo('name'); // retrieve the site name
     				echo ' @ '; // separator with spaces
-    				bloginfo ('url'); // write in the web address for early 2000s vibes
+    				bloginfo ('url'); // write in the location
 	
 }
 
 
-  //create a flexslider gallery from attachment images
-    function get_flexslider() {
-	
-    global $post; // don't forget to make this a global variable inside your function
-    $attachments = get_children(array('post_parent' => $post->ID,'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' =>'ASC', 'orderby' => 'menu_order'));
-    if ($attachments) { // see if there are images attached to posting
-        echo '<div class="flexslider">';
-        echo '<ul class="slides">';
-        foreach ( $attachments as $attachment ) { // create the list items for images with captions
-            echo '<li>';
-            echo wp_get_attachment_image($attachment->ID, 'large'); // get image size large
-            echo get_post_field('post_content', $attachment->ID); // get image description field
-            echo '</li>';
-        }
-        echo '</ul>';
-        echo '</div>';
-    } // end see if images attached
-} 
+
 
 ?>
